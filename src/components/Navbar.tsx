@@ -216,7 +216,10 @@ const Navbar = () => {
                 <div key={item.label} className="relative group">
                   {item.submenu ? (
                     <>
-                      <button className="relative px-5 py-2.5 font-semibold transition-all duration-300 flex items-center gap-1.5 group text-white hover:text-white/90">
+                      <Link
+                        to={item.href}
+                        className="relative px-5 py-2.5 font-semibold transition-all duration-300 flex items-center gap-1.5 group text-white hover:text-white/90"
+                      >
                         <span className="relative">
                           {item.label}
                           <span className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full bg-white rounded-full"></span>
@@ -234,7 +237,7 @@ const Navbar = () => {
                             d="M19 9l-7 7-7-7"
                           />
                         </svg>
-                      </button>
+                      </Link>
                       {/* Dropdown Menu */}
                       <div className="absolute left-0 mt-2 w-80 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 translate-y-3 transition-all duration-300 overflow-hidden border border-gray-100/50">
                         <div className="p-2">
@@ -432,44 +435,55 @@ const Navbar = () => {
                 >
                   {item.submenu ? (
                     <div className="space-y-1">
-                      <button
-                        onClick={() => setIsServicesOpen(!isServicesOpen)}
-                        className={`w-full text-left px-4 py-3.5 text-sm font-semibold rounded-xl flex justify-between items-center transition-all duration-300 group ${
-                          isServicesOpen
-                            ? "bg-secondary/10 text-secondary shadow-sm"
-                            : "text-gray-700 hover:bg-gray-100/80"
-                        }`}
-                      >
-                        <span className="flex items-center gap-3.5">
-                          <span
-                            className={`transition-colors duration-300 ${
-                              isServicesOpen
-                                ? "text-secondary"
-                                : "text-gray-500 group-hover:text-secondary"
-                            }`}
-                          >
-                            {getMenuIcon(item.label)}
-                          </span>
-                          <span>{item.label}</span>
-                        </span>
-                        <svg
-                          className={`h-5 w-5 transform transition-all duration-300 ${
-                            isServicesOpen
-                              ? "rotate-180 text-secondary"
-                              : "text-gray-400 group-hover:text-secondary"
+                      <div className="flex items-center gap-1">
+                        <Link
+                          to={item.href}
+                          onClick={handleLinkClick}
+                          className={`flex-1 text-left px-4 py-3.5 text-sm font-semibold rounded-xl transition-all duration-300 group ${
+                            isActive(item.href)
+                              ? "text-white bg-linear-to-r from-secondary via-secondary to-secondary/90 shadow-lg shadow-secondary/25"
+                              : "text-gray-700 hover:bg-gray-100/80 hover:text-secondary"
                           }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
+                          <span className="flex items-center gap-3.5">
+                            <span
+                              className={`transition-colors duration-300 ${
+                                isActive(item.href)
+                                  ? "text-white"
+                                  : "text-gray-500 group-hover:text-secondary"
+                              }`}
+                            >
+                              {getMenuIcon(item.label)}
+                            </span>
+                            <span>{item.label}</span>
+                          </span>
+                        </Link>
+                        <button
+                          onClick={() => setIsServicesOpen(!isServicesOpen)}
+                          className={`p-3 rounded-xl transition-all duration-300 ${
+                            isServicesOpen
+                              ? "bg-secondary/10 text-secondary"
+                              : "text-gray-400 hover:bg-gray-100/80 hover:text-secondary"
+                          }`}
+                          aria-label="Toggle submenu"
+                        >
+                          <svg
+                            className={`h-5 w-5 transform transition-transform duration-300 ${
+                              isServicesOpen ? "rotate-180" : ""
+                            }`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                      </div>
                       <div
                         className={`overflow-hidden transition-all duration-300 ${
                           isServicesOpen
