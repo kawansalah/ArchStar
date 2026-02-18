@@ -230,7 +230,7 @@ const Services = () => {
 
           {/* Subtitle */}
           <p
-            className="text-xl md:text-2xl text-primary font-semibold mb-4 animate-fade-in"
+            className="text-xl md:text-2xl text-white font-semibold mb-4 animate-fade-in"
             style={{ animationDelay: "0.4s" }}
           >
             Consultancy-Led Advisory & End-to-End Global Logistics Operations
@@ -249,7 +249,7 @@ const Services = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
           <a
             href="#services-overview"
-            className="flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors duration-300"
+            className="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors duration-300"
           >
             <span className="text-sm font-medium">Explore Services</span>
             <svg
@@ -296,15 +296,15 @@ const Services = () => {
                   style={{ animationDelay: "0.2s" }}
                 >
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="shrink-0 w-20 h-20 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary">
+                    <div className="shrink-0 w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center text-gray-800">
                       {service.icon}
                     </div>
-                    <span className="text-6xl font-bold text-primary">
+                    <span className="text-6xl font-bold text-gray-800">
                       {service.number}
                     </span>
                   </div>
 
-                  <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                     {service.title}
                   </h2>
                   <div className="w-20 h-1 bg-primary mb-6"></div>
@@ -371,7 +371,7 @@ const Services = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Icon */}
-                <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center text-primary mb-6">
+                <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center text-gray-800 mb-6">
                   {level.icon}
                 </div>
 
@@ -388,7 +388,7 @@ const Services = () => {
                       className="flex items-start gap-3 text-gray-100"
                     >
                       <svg
-                        className="w-5 h-5 text-primary shrink-0 mt-0.5"
+                        className="w-5 h-5 text-gray-800 shrink-0 mt-0.5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -411,7 +411,7 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-linear-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-fade-in">
             Ready to Transform Your Operations?
           </h2>
           <p

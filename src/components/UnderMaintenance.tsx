@@ -63,7 +63,7 @@ const UnderMaintenance = ({
           className="mb-8 animate-fade-in"
           style={{ animationDelay: "0.6s" }}
         >
-          <p className="text-2xl md:text-3xl text-primary font-semibold mb-4">
+          <p className="text-2xl md:text-3xl text-white font-semibold mb-4">
             Under Construction
           </p>
           <p className="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
@@ -74,7 +74,7 @@ const UnderMaintenance = ({
           {expectedDate && (
             <p className="text-base md:text-lg text-gray-300 mt-4">
               Expected launch:{" "}
-              <span className="text-primary font-semibold">{expectedDate}</span>
+              <span className="text-white font-semibold">{expectedDate}</span>
             </p>
           )}
         </div>

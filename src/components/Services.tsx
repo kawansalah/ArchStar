@@ -78,7 +78,7 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What We <span className="text-secondary">Do</span>
+            What We <span className="text-gray-900">Do</span>
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -123,7 +123,7 @@ const Services = () => {
                   {service.keywords.slice(0, 3).map((keyword) => (
                     <span
                       key={keyword}
-                      className="inline-block px-3 py-1 text-xs font-medium text-secondary bg-primary/20 rounded-full"
+                      className="inline-block px-3 py-1 text-xs font-medium text-gray-800 bg-gray-200 rounded-full"
                     >
                       {keyword}
                     </span>
@@ -133,7 +133,7 @@ const Services = () => {
                 {/* Learn More Link */}
                 <Link
                   to={service.link}
-                  className="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all duration-300 group/link"
+                  className="inline-flex items-center gap-2 text-gray-800 font-semibold hover:gap-3 transition-all duration-300 group/link"
                 >
                   <span>Learn More</span>
                   <svg

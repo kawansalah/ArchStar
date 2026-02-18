@@ -10,6 +10,11 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Global text justification */
+  p, li, blockquote {
+    text-align: justify;
+  }
 }
 
 @theme {

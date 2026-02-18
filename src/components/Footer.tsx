@@ -149,7 +149,7 @@ const Footer = () => {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center gap-2 group"
                   >
                     <svg
                       className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300"
@@ -181,7 +181,7 @@ const Footer = () => {
                 <li key={service.href}>
                   <Link
                     to={service.href}
-                    className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center gap-2 group"
                   >
                     <svg
                       className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300"
@@ -215,7 +215,7 @@ const Footer = () => {
                   className="bg-white/5 rounded-lg p-4 hover:bg-white/10 transition-all duration-300 border border-white/10"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="text-primary mt-1">{location.icon}</div>
+                    <div className="text-white mt-1">{location.icon}</div>
                     <div className="flex-1">
                       <h4 className="font-semibold text-white mb-2">
                         {location.region}
@@ -223,7 +223,7 @@ const Footer = () => {
                       <div className="space-y-1">
                         <a
                           href={`tel:${location.phone.replace(/\s/g, "")}`}
-                          className="flex items-center gap-2 text-sm text-gray-300 hover:text-primary transition-colors duration-300"
+                          className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors duration-300"
                         >
                           <svg
                             className="w-4 h-4 shrink-0"
@@ -242,7 +242,7 @@ const Footer = () => {
                         </a>
                         <a
                           href={`mailto:${location.email}`}
-                          className="flex items-center gap-2 text-sm text-gray-300 hover:text-primary transition-colors duration-300 break-all"
+                          className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors duration-300 break-all"
                         >
                           <svg
                             className="w-4 h-4 shrink-0"
@@ -279,19 +279,19 @@ const Footer = () => {
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
               <Link
                 to="/privacy"
-                className="hover:text-primary transition-colors duration-300"
+                className="hover:text-white transition-colors duration-300"
               >
                 Privacy Policy
               </Link>
               <Link
                 to="/terms"
-                className="hover:text-primary transition-colors duration-300"
+                className="hover:text-white transition-colors duration-300"
               >
                 Terms of Service
               </Link>
               <Link
                 to="/sitemap"
-                className="hover:text-primary transition-colors duration-300"
+                className="hover:text-white transition-colors duration-300"
               >
                 Sitemap
               </Link>

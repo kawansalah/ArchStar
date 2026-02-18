@@ -29,17 +29,17 @@ const Hero = () => {
             {/* Company Name */}
             <div className="space-y-2">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="block text-primary animate-slide-in">
+                <span className="block text-white animate-slide-in">
                   ARCH STAR
                 </span>
-                <span className="block text-white mt-2">(USA)</span>
+                <span className="block text-gray-200 mt-2">(USA)</span>
               </h1>
             </div>
 
             {/* Tagline */}
             <div className="space-y-4">
               <p
-                className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary animate-fade-in"
+                className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white animate-fade-in"
                 style={{ animationDelay: "0.2s" }}
               >
                 Plan Smart, Move Global
@@ -51,7 +51,7 @@ const Hero = () => {
                 style={{ animationDelay: "0.4s" }}
               >
                 Arch Star (USA) provides{" "}
-                <span className="font-semibold text-primary">
+                <span className="font-semibold text-white">
                   logistics, finance, and management consultancy
                 </span>{" "}
                 plus global logistics operations with port and airport handling.
@@ -62,7 +62,7 @@ const Hero = () => {
                 style={{ animationDelay: "0.6s" }}
               >
                 We support governments, institutions, and companies worldwide
-                from <span className="font-bold text-primary">A to Z</span>:
+                from <span className="font-bold text-white">A to Z</span>:
                 strategy, design, implementation, and delivery.
               </p>
             </div>
@@ -230,7 +230,7 @@ const Hero = () => {
                 className="group bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 hover:bg-white/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 style={{ animationDelay: `${0.7 + index * 0.1}s` }}
               >
-                <div className="text-primary mb-3 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-white mb-3 group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-white font-bold text-lg mb-2">
@@ -249,7 +249,7 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
         <a
           href="#ceo-message"
-          className="flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors duration-300 group"
+          className="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors duration-300 group"
         >
           <span className="text-sm font-medium">Scroll to explore</span>
           <svg

@@ -38,7 +38,7 @@ const About = () => {
 
           {/* Subtitle */}
           <p
-            className="text-xl md:text-2xl text-primary font-semibold mb-4 animate-fade-in"
+            className="text-xl md:text-2xl text-white font-semibold mb-4 animate-fade-in"
             style={{ animationDelay: "0.4s" }}
           >
             Your Trusted Partner in Global Logistics Excellence
@@ -57,7 +57,7 @@ const About = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
           <a
             href="#who-we-are"
-            className="flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors duration-300"
+            className="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors duration-300"
           >
             <span className="text-sm font-medium">Learn More</span>
             <svg
@@ -81,7 +81,7 @@ const About = () => {
       <section id="who-we-are" className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Who We Are
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
@@ -94,11 +94,11 @@ const About = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <p className="text-lg text-gray-700 leading-relaxed">
-                <span className="font-bold text-secondary">
+                <span className="font-bold text-gray-900">
                   Arch Star (USA)
                 </span>{" "}
                 is a{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   registered consultancy and logistics company
                 </span>{" "}
                 based in the United States, specializing in logistics, finance,
@@ -108,21 +108,21 @@ const About = () => {
 
               <p className="text-lg text-gray-700 leading-relaxed">
                 We serve{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   governments, institutions, and companies
                 </span>{" "}
                 worldwide, providing{" "}
-                <span className="font-bold text-primary">A to Z</span> support
+                <span className="font-bold text-gray-900">A to Z</span> support
                 from strategy design to full implementation and delivery.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
                 Our expertise combines{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   consultancy-led advisory services
                 </span>{" "}
                 with{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   hands-on operational execution
                 </span>
                 , ensuring measurable results backed by strong documentation.
@@ -221,9 +221,9 @@ const About = () => {
                   className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-primary/10 transition-all duration-300 hover:shadow-lg"
                   style={{ animationDelay: `${0.5 + index * 0.1}s` }}
                 >
-                  <div className="shrink-0 text-secondary">{item.icon}</div>
+                  <div className="shrink-0 text-gray-800">{item.icon}</div>
                   <div>
-                    <h3 className="font-bold text-secondary text-lg mb-1">
+                    <h3 className="font-bold text-gray-900 text-lg mb-1">
                       {item.title}
                     </h3>
                     <p className="text-gray-600 text-sm">{item.description}</p>
@@ -244,7 +244,7 @@ const About = () => {
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-primary rounded-full p-4">
                   <svg
-                    className="w-8 h-8 text-secondary"
+                    className="w-8 h-8 text-gray-800"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -263,27 +263,27 @@ const About = () => {
                     />
                   </svg>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-secondary">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                   Vision
                 </h2>
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 To be the{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   global leader in integrated logistics consultancy and
                   operations
                 </span>
                 , recognized for delivering{" "}
-                <span className="font-bold text-primary">
+                <span className="font-bold text-gray-900">
                   exceptional value
                 </span>
                 ,{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   innovative solutions
                 </span>
                 , and{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   measurable results
                 </span>{" "}
                 that empower our clients to succeed in the global marketplace.
@@ -304,7 +304,7 @@ const About = () => {
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-secondary rounded-full p-4">
                   <svg
-                    className="w-8 h-8 text-primary"
+                    className="w-8 h-8 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -317,23 +317,23 @@ const About = () => {
                     />
                   </svg>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-secondary">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                   Mission
                 </h2>
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 To provide{" "}
-                <span className="font-bold text-primary">A to Z</span>{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-bold text-gray-900">A to Z</span>{" "}
+                <span className="font-semibold text-gray-900">
                   comprehensive logistics, finance, and management solutions
                 </span>{" "}
                 to governments, institutions, and companies worldwide, combining{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   expert consultancy
                 </span>{" "}
                 with{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   operational excellence
                 </span>
                 .
@@ -341,7 +341,7 @@ const About = () => {
 
               <p className="text-lg text-gray-700 leading-relaxed">
                 We are committed to delivering{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   practical solutions, strong documentation, and measurable
                   results
                 </span>{" "}
@@ -356,7 +356,7 @@ const About = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Why Choose Arch Star
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
@@ -491,13 +491,13 @@ const About = () => {
             ].map((item, index) => (
               <div
                 key={item.title}
-                className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-primary animate-fade-in"
+                className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-gray-300 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-secondary group-hover:text-primary transition-colors duration-300 mb-4">
+                <div className="text-gray-900 group-hover:text-gray-700 transition-colors duration-300 mb-4">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-700 transition-colors duration-300">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -522,7 +522,7 @@ const About = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-3 bg-primary text-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
+                className="inline-flex items-center gap-3 bg-primary text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
               >
                 Contact Us Today
                 <svg

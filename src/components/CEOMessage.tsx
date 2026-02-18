@@ -10,7 +10,7 @@ const CEOMessage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             CEO Message
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-primary mx-auto"></div>
@@ -20,7 +20,7 @@ const CEOMessage = () => {
         <div className="lg:hidden">
           {/* Welcome Header First on Mobile */}
           <div className="text-center mb-6 animate-fade-in">
-            <h3 className="text-2xl font-bold text-secondary mb-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Welcome to Arch Star (USA).
             </h3>
           </div>
@@ -46,7 +46,7 @@ const CEOMessage = () => {
               {/* Quote Icon */}
               <div className="absolute -top-2 -right-2 bg-primary rounded-full p-2 shadow-lg">
                 <svg
-                  className="w-4 h-4 text-secondary"
+                  className="w-4 h-4 text-gray-800"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -58,7 +58,7 @@ const CEOMessage = () => {
 
           {/* Name & Title */}
           <div className="text-center mb-6">
-            <h3 className="text-xl font-bold text-secondary">Tawfik Mazraeh</h3>
+            <h3 className="text-xl font-bold text-gray-900">Tawfik Mazraeh</h3>
             <p className="text-base text-gray-600 mt-1">CEO, Arch Star (USA)</p>
           </div>
 
@@ -69,25 +69,25 @@ const CEOMessage = () => {
           >
             <p>
               Logistics today is more than moving cargo, it is about{" "}
-              <span className="font-semibold text-secondary">
+              <span className="font-semibold text-gray-900">
                 time, cost control, compliance, and trust
               </span>
               . At Arch Star, we operate as both a{" "}
-              <span className="font-semibold text-secondary">
+              <span className="font-semibold text-gray-900">
                 consultancy-led advisor
               </span>{" "}
               and a{" "}
-              <span className="font-semibold text-secondary">
+              <span className="font-semibold text-gray-900">
                 global logistics operator
               </span>
               , supporting clients from strategy to execution{" "}
-              <span className="font-bold text-primary">A to Z</span>.
+              <span className="font-bold text-gray-900">A to Z</span>.
             </p>
 
             <p>
               We help countries, institutions, and companies improve logistics,
               finance, and management performance with{" "}
-              <span className="font-semibold text-secondary">
+              <span className="font-semibold text-gray-900">
                 practical solutions, strong documentation, and measurable
                 results
               </span>
@@ -98,7 +98,7 @@ const CEOMessage = () => {
 
             <p className="pt-2 text-center">
               Thank you for visiting. Let's discuss your goals{" "}
-              <span className="font-bold text-primary text-base">
+              <span className="font-bold text-gray-900 text-base">
                 Plan Smart, Move Global
               </span>
               .
@@ -108,7 +108,7 @@ const CEOMessage = () => {
           {/* Signature - Centered on Mobile */}
           <div className="text-center py-6 border-t border-gray-200 mb-6">
             <p className="text-gray-600 text-sm">Sincerely,</p>
-            <p className="text-lg font-bold text-secondary mt-2">
+            <p className="text-lg font-bold text-gray-900 mt-2">
               Tawfik Mazraeh
             </p>
             <p className="text-sm text-gray-600">CEO, Arch Star (USA)</p>
@@ -161,7 +161,7 @@ const CEOMessage = () => {
               {/* Quote Icon */}
               <div className="absolute -top-3 -right-3 bg-primary rounded-full p-3 shadow-lg">
                 <svg
-                  className="w-5 h-5 text-secondary"
+                  className="w-5 h-5 text-gray-800"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -178,7 +178,7 @@ const CEOMessage = () => {
           >
             {/* Welcome Header */}
             <div>
-              <h3 className="text-3xl font-bold text-secondary mb-4">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 Welcome to Arch Star (USA).
               </h3>
             </div>
@@ -187,25 +187,25 @@ const CEOMessage = () => {
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <p>
                 Logistics today is more than moving cargo, it is about{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   time, cost control, compliance, and trust
                 </span>
                 . At Arch Star, we operate as both a{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   consultancy-led advisor
                 </span>{" "}
                 and a{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   global logistics operator
                 </span>
                 , supporting clients from strategy to execution{" "}
-                <span className="font-bold text-primary">A to Z</span>.
+                <span className="font-bold text-gray-900">A to Z</span>.
               </p>
 
               <p>
                 We help countries, institutions, and companies improve
                 logistics, finance, and management performance with{" "}
-                <span className="font-semibold text-secondary">
+                <span className="font-semibold text-gray-900">
                   practical solutions, strong documentation, and measurable
                   results
                 </span>
@@ -216,7 +216,7 @@ const CEOMessage = () => {
 
               <p className="pt-2">
                 Thank you for visiting. Let's discuss your goals{" "}
-                <span className="font-bold text-primary text-xl">
+                <span className="font-bold text-gray-900 text-xl">
                   Plan Smart, Move Global
                 </span>
                 .
@@ -227,7 +227,7 @@ const CEOMessage = () => {
             <div className="pt-6 border-t border-gray-200">
               <div className="space-y-1">
                 <p className="text-gray-600 text-lg">Sincerely,</p>
-                <p className="text-2xl font-bold text-secondary mt-2">
+                <p className="text-2xl font-bold text-gray-900 mt-2">
                   Tawfik Mazraeh
                 </p>
                 <p className="text-lg text-gray-600">CEO, Arch Star (USA)</p>
@@ -275,7 +275,7 @@ const CEOMessage = () => {
               className="text-center p-3 lg:p-6 bg-white rounded-lg lg:rounded-xl shadow-md lg:shadow-lg hover:shadow-xl lg:hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100"
               style={{ animationDelay: `${0.7 + index * 0.1}s` }}
             >
-              <p className="text-xl lg:text-3xl font-bold text-secondary mb-1">
+              <p className="text-xl lg:text-3xl font-bold text-gray-900 mb-1">
                 {item.value}
               </p>
               <p className="text-xs lg:text-sm text-gray-600 font-medium">
