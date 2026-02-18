@@ -543,7 +543,7 @@ const Navbar = () => {
                               fill="currentColor"
                               viewBox="0 0 24 24"
                             >
-                              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              <path d="M11 18l-5-5 5-5" />
                             </svg>
                           </span>
                           <span className="absolute inset-0 bg-linear-to-r from-white/10 via-transparent to-transparent"></span>
