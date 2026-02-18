@@ -589,9 +589,6 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
-            <p className="text-center text-xs text-gray-400 mt-3 font-medium">
-              Trusted by companies worldwide
-            </p>
           </div>
         </div>
       </div>
