@@ -94,9 +94,7 @@ const About = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <p className="text-lg text-gray-700 leading-relaxed">
-                <span className="font-bold text-gray-900">
-                  Arch Star (USA)
-                </span>{" "}
+                <span className="font-bold text-gray-900">Arch Star (USA)</span>{" "}
                 is a{" "}
                 <span className="font-semibold text-gray-900">
                   registered consultancy and logistics company

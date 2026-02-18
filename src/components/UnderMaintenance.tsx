@@ -44,7 +44,6 @@ const UnderMaintenance = ({
           style={{ animationDelay: "0.2s" }}
         >
           <div className="relative">
-
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-3 h-3 bg-primary rounded-full animate-ping"></div>
             </div>

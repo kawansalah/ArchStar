@@ -12,7 +12,9 @@
   }
 
   /* Global text justification */
-  p, li, blockquote {
+  p,
+  li,
+  blockquote {
     text-align: justify;
   }
 }
