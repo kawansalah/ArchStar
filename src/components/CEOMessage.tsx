@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ceoImage from "../assets/images/IMG_898d2.png";
+import ceoImage from "../assets/images/IMG_8982.png";
 
 const CEOMessage = () => {
   return (
