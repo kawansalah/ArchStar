@@ -1,185 +1,113 @@
 import { Link } from "react-router-dom";
 
-interface Service {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-  keywords: string[];
-}
+const serviceIcons = [
+  // Logistics Consultancy
+  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+  </svg>,
+  // Finance Consultancy
+  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+  </svg>,
+  // Management Consultancy
+  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>,
+  // Global Logistics Ops
+  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>,
+];
+
+const services = [
+  {
+    title: "Logistics Consultancy",
+    teaser: "Design and optimise supply chains at national, sector, and company level.",
+    link: "/services#logistics-consultancy",
+  },
+  {
+    title: "Finance Consultancy",
+    teaser: "Strengthen financial control with cost analysis, cash-flow planning, and feasibility studies.",
+    link: "/services#finance-consultancy",
+  },
+  {
+    title: "Management Consultancy",
+    teaser: "Build high-performing organisations through governance, SOPs, and PMO setup.",
+    link: "/services#management-consultancy",
+  },
+  {
+    title: "Global Logistics Operations",
+    teaser: "End-to-end port & airport handling, multimodal routing, and documentation control.",
+    link: "/services#global-logistics-operations",
+  },
+];
 
 const Services = () => {
-  const services: Service[] = [
-    {
-      title: "Logistics Consultancy",
-      description:
-        "We design and improve supply chains and logistics systems from national logistics strategies and corridor development to company-level optimization. We help clients improve cost, speed, reliability, compliance, and visibility through operating models, KPIs, and implementation roadmaps.",
-      image:
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop&q=80",
-      link: "/services#logistics-consultancy",
-      keywords: [
-        "Supply Chain Consultancy",
-        "National Logistics Strategy",
-        "Corridor Development",
-        "Logistics KPI Framework",
-        "Logistics Optimization",
-      ],
-    },
-    {
-      title: "Finance Consultancy",
-      description:
-        "We strengthen financial control and decision-making by identifying cost drivers, improving cash-flow planning, and building pricing and profitability models. We also prepare feasibility studies and investment cases for logistics hubs, free zones, warehouses, and fleets.",
-      image:
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop&q=80",
-      link: "/services#finance-consultancy",
-      keywords: [
-        "Logistics Finance Consulting",
-        "Cost Analysis",
-        "Cash Flow Planning",
-        "Feasibility Study",
-        "Investment Case",
-      ],
-    },
-    {
-      title: "Management Consultancy",
-      description:
-        "We build high-performing organizations by improving structure, roles, governance, and performance management. With SOPs, PMO setup, and change management, we help leaders turn strategy into daily execution.",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80",
-      link: "/services#management-consultancy",
-      keywords: [
-        "Operating Model Design",
-        "SOP Development",
-        "PMO Setup",
-        "Performance Management KPIs",
-        "Change Management",
-      ],
-    },
-    {
-      title: "Global Logistics Operations",
-      description:
-        "Beyond consulting, we provide end-to-end logistics coordination including port and airport handling, documentation control, milestone tracking, and multimodal routing so plans become real movement and real outcomes.",
-      image:
-        "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&h=600&fit=crop&q=80",
-      link: "/services#global-logistics-operations",
-      keywords: [
-        "Global Logistics Operations",
-        "Port Handling Services",
-        "Airport Cargo Handling",
-        "Multimodal Logistics",
-        "Cross-Border Logistics Coordination",
-      ],
-    },
-  ];
-
   return (
-    <section className="py-20 bg-linear-to-b from-white to-gray-50">
+    <section className="py-20 md:py-28 bg-neutral-50 border-y border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What We <span className="text-gray-900">Do</span>
-          </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive solutions that transform your logistics, finance, and
-            management capabilities into competitive advantages.
+        {/* Header */}
+        <div className="lg:flex lg:items-end lg:justify-between mb-12 animate-fade-in">
+          <div>
+            <p className="text-xs font-semibold text-secondary uppercase tracking-widest mb-3">
+              What We Do
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+              Our Services
+            </h2>
+            <div className="accent-bar" />
+          </div>
+          <p className="text-slate-500 text-base max-w-sm mt-4 lg:mt-0 lg:text-right">
+            Comprehensive solutions from strategy design through to final delivery.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+        {/* Services Card Grid */}
+        <div className="grid md:grid-cols-2 gap-5">
           {services.map((service, index) => (
-            <div
+            <Link
               key={service.title}
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-fade-in"
-              style={{ animationDelay: `${index * 150}ms` }}
+              to={service.link}
+              className="group service-card flex items-start gap-5 animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Image Container */}
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-secondary/90 via-secondary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500"></div>
-
-                {/* Title Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                    {service.title}
-                  </h3>
-                </div>
+              {/* Icon */}
+              <div className="shrink-0 w-14 h-14 flex items-center justify-center rounded-xl bg-secondary/8 text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-250">
+                {serviceIcons[index]}
               </div>
 
-              {/* Content */}
-              <div className="p-6 lg:p-8">
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  {service.description}
+              {/* Text */}
+              <div className="flex-1 min-w-0">
+                <h3 className="font-semibold text-slate-900 mb-1.5 text-base group-hover:text-secondary transition-colors duration-200">
+                  {service.title}
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  {service.teaser}
                 </p>
-
-                {/* Keywords */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {service.keywords.slice(0, 3).map((keyword) => (
-                    <span
-                      key={keyword}
-                      className="inline-block px-3 py-1 text-xs font-medium text-gray-800 bg-gray-200 rounded-full"
-                    >
-                      {keyword}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Learn More Link */}
-                <Link
-                  to={service.link}
-                  className="inline-flex items-center gap-2 text-gray-800 font-semibold hover:gap-3 transition-all duration-300 group/link"
-                >
-                  <span>Learn More</span>
-                  <svg
-                    className="h-5 w-5 transition-transform duration-300 group-hover/link:translate-x-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </Link>
               </div>
-            </div>
+
+              {/* Arrow */}
+              <div className="shrink-0 mt-1 text-slate-300 group-hover:text-secondary group-hover:translate-x-1 transition-all duration-200">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div
-          className="mt-16 text-center animate-fade-in"
-          style={{ animationDelay: "600ms" }}
-        >
-          <p className="text-lg text-gray-600 mb-6">
+        {/* Footer CTA */}
+        <div className="mt-10 pt-8 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4 animate-fade-in" style={{ animationDelay: "450ms" }}>
+          <p className="text-slate-500 text-sm">
             Ready to transform your operations?
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-secondary/90 transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95"
+            className="inline-flex items-center gap-2 bg-primary text-slate-900 px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-yellow-300 transition-all duration-200 hover:shadow-lg hover:shadow-primary/30"
           >
             Get Started Today
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </Link>
         </div>

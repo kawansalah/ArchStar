@@ -1,36 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 @layer base {
   :root {
     /* Arch Star Brand Colors */
-    --color-primary: #ffe550; /* Yellow */
-    --color-secondary: #243b98; /* Blue */
+    --color-primary: #ffe550; /* Yellow — accent only (10%) */
+    --color-secondary: #243b98; /* Blue — structural/text accents (30%) */
+    --color-charcoal: #0f172a; /* Footer / dark sections */
+    --color-neutral-50: #f8f9fa;
+    --color-neutral-100: #f1f5f9;
   }
 
   html {
     scroll-behavior: smooth;
   }
 
-  /* Global text justification */
+  body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    background-color: #ffffff;
+  }
+
+  /* Remove newspaper feel — left-align body text */
   p,
   li,
   blockquote {
-    text-align: justify;
+    text-align: left;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: -0.02em;
   }
 }
 
 @theme {
   --color-primary: #ffe550;
   --color-secondary: #243b98;
+  --color-charcoal: #0f172a;
   --color-brand-yellow: #ffe550;
   --color-brand-blue: #243b98;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
-/* Custom Animations */
+/* =============================================
+   CUSTOM ANIMATIONS
+   ============================================= */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -55,22 +79,27 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
 }
 
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
 .animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.7s ease-out forwards;
   opacity: 0;
 }
 
 .animate-slide-in {
-  animation: slideIn 0.8s ease-out forwards;
+  animation: slideIn 0.7s ease-out forwards;
   opacity: 0;
 }
 
 .animate-slideIn {
-  animation: slideIn 0.4s ease-out forwards;
+  animation: slideIn 0.35s ease-out forwards;
   opacity: 0;
 }
 
@@ -78,20 +107,93 @@
   animation: bounce 2s ease-in-out infinite;
 }
 
-/* Custom scrollbar */
-.scrollbar-thin::-webkit-scrollbar {
-  width: 6px;
+/* =============================================
+   UTILITY CLASSES
+   ============================================= */
+
+/* Clean section separator */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e2e8f0, transparent);
 }
 
+/* Accent bar for section headers */
+.accent-bar {
+  width: 3rem;
+  height: 3px;
+  background-color: #243b98;
+  border-radius: 2px;
+}
+
+/* Primary CTA button style */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ffe550;
+  color: #0f172a;
+  font-weight: 700;
+  padding: 0.875rem 2rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #f5d800;
+  box-shadow: 0 8px 24px rgba(255, 229, 80, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Ghost CTA button */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+.btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Service card */
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.25s ease;
+}
+.service-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Pull-quote style */
+.pull-quote {
+  border-left: 4px solid #243b98;
+  padding-left: 1.25rem;
+  font-style: italic;
+  color: #475569;
+}
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+}
 .scrollbar-thin::-webkit-scrollbar-track {
   background: transparent;
 }
-
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: #cbd5e1;
   border-radius: 3px;
 }
-
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: #94a3b8;
 }

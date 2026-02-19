@@ -1,16 +1,17 @@
 import Hero from "../components/Hero";
-import Services from "../components/Services";
 import CEOMessage from "../components/CEOMessage";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero */}
       <Hero />
-      {/* CEO Message Section */}
+
+      {/* CEO Message */}
       <CEOMessage />
 
-      {/* Services Section */}
+      {/* Services */}
       <Services />
     </div>
   );
