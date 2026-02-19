@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import aboutHeroImage from "../assets/images/about-hero.jpg";
-import logo from "../assets/logo/logo.png";
 
 const About = () => {
   return (

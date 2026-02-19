@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import logo from "../assets/logo/logo.png";
 
 const Services = () => {
   const location = useLocation();
