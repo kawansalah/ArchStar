@@ -210,7 +210,6 @@ const Services = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
           {/* Title */}
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in"
