@@ -211,14 +211,6 @@ const Services = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Logo */}
-          <div className="flex justify-center mb-8 animate-fade-in">
-            <img
-              src={logo}
-              alt="Arch Star USA Logo"
-              className="h-20 md:h-28 w-auto drop-shadow-2xl"
-            />
-          </div>
 
           {/* Title */}
           <h1
@@ -388,7 +380,7 @@ const Services = () => {
                       className="flex items-start gap-3 text-gray-100"
                     >
                       <svg
-                        className="w-5 h-5 text-gray-800 shrink-0 mt-0.5"
+                        className="w-5 h-5 text-white shrink-0 mt-0.5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
