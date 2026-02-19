@@ -19,14 +19,6 @@ const About = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Logo */}
-          <div className="flex justify-center mb-8 animate-fade-in">
-            <img
-              src={logo}
-              alt="Arch Star USA Logo"
-              className="h-20 md:h-28 w-auto drop-shadow-2xl"
-            />
-          </div>
 
           {/* Title */}
           <h1
